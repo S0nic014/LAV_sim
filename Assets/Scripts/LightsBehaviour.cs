@@ -9,7 +9,6 @@ public class LightsBehaviour : MonoBehaviour
 
     void Start(){   
         frontLights= new Light[frontLightobjs.Length];
-        Debug.Log(frontLights.Length); 
         for (int i=0; i<frontLightobjs.Length; i++)
         {
             frontLights[i]=frontLightobjs[i].GetComponent<Light>();
