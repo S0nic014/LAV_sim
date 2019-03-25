@@ -12,6 +12,8 @@ public class CameraBehaviour : MonoBehaviour {
 
 	void Start () {
 		cameraOffset=new Vector3(player.position.x, player.position.y+yOffset, player.position.z+zOffset);
+		Cursor.lockState=CursorLockMode.Locked;
+        Cursor.visible=false;
 	}
 	
 	void LateUpdate () {
