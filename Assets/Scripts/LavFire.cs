@@ -5,13 +5,9 @@ using UnityEngine;
 public class LavFire : MonoBehaviour
 {
     public AudioClip fireSound;
-    
     public AudioSource fireSourse;
-
     public GameObject barrel;
     private Animator anim;
-
-   
 
     void Start() {
         fireSourse.clip=fireSound;
@@ -39,6 +35,7 @@ public class LavFire : MonoBehaviour
     }
 
     public void PlayAnim(){
+        //TODO: add condition: play only if not being played already
         anim.Play("FireAnim");
     }
    
