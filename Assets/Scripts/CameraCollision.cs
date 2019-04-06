@@ -16,7 +16,6 @@ public class CameraCollision : MonoBehaviour
     void Awake() { 
         dollyDir=transform.localPosition.normalized;
         distance=transform.localPosition.magnitude;
-        
     }
 
     // Update is called once per frame
