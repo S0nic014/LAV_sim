@@ -1075,6 +1075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2004677991}
   - component: {fileID: 2004677993}
+  - component: {fileID: 2004677994}
   - component: {fileID: 2004677992}
   m_Layer: 0
   m_Name: ExhaustSmoke
@@ -5763,6 +5764,30 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &2004677994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004677990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a417db7a40b5b4b62aadfcbe660932fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleSpeed: 0
+  idleSize: 0
+  idleRate: 0
+  maxSpeed: 4
+  maxSize: 1
+  maxRate: 15
+  speedDelta: 0.2
+  sizeDelta: 0.1
+  rateDelta: 3
+  currentSpeed: 0
+  currentSize: 0
+  currentRate: 0
 --- !u!1 &2057786845
 GameObject:
   m_ObjectHideFlags: 0
