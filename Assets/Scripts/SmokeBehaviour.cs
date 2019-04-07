@@ -48,6 +48,20 @@ public class SmokeBehaviour : MonoBehaviour
                 StartCoroutine("RateUp");
             }
         }
+
+        if(Input.GetKeyUp(KeyCode.W)){
+            if (currentSpeed>idleSpeed){
+                StartCoroutine("SpeedDown");
+            }
+
+            if(currentSize>idleSize){
+                StartCoroutine("SizeDown");
+            }
+
+            if(currentRate>idleRate){
+                StartCoroutine("RateDown");
+            }
+        }
     }
 
     IEnumerator SpeedUp(){
@@ -77,6 +91,33 @@ public class SmokeBehaviour : MonoBehaviour
         }
     }
 
+    IEnumerator SpeedDown(){
+        yield return new WaitForFixedUpdate();
         
+        if (currentSpeed>idleSpeed){
+            smoke.startSpeed-=speedDelta;
+            currentSpeed=smoke.startSpeed;
+            StartCoroutine("SpeedDown");
+    }
+    }
 
+    IEnumerator SizeDown(){
+        yield return new WaitForFixedUpdate();
+        if (currentSize>idleRate){
+            smoke.startSize-=sizeDelta;
+            currentSize=smoke.startSize;
+            StartCoroutine("SizeDown");
+        }
+    }
+
+    IEnumerator RateDown(){
+        yield return new WaitForFixedUpdate();
+        if (currentRate>idleRate){
+            smoke.emissionRate-=rateDelta;
+            currentRate=smoke.emissionRate;
+            StartCoroutine("RateDown");
+        }
+    }
+
+    
 }

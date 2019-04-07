@@ -1296,7 +1296,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2.7
+      scalar: 2.6
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5781,10 +5781,10 @@ MonoBehaviour:
   idleRate: 0
   maxSpeed: 4
   maxSize: 1
-  maxRate: 15
+  maxRate: 18
   speedDelta: 0.2
   sizeDelta: 0.1
-  rateDelta: 3
+  rateDelta: 2
   currentSpeed: 0
   currentSize: 0
   currentRate: 0
