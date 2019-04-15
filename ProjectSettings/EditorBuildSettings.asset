@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: a86e28560f4fc4b47b424d02b41d450a
+  - enabled: 1
+    path: Assets/Scenes/Lav25_PlayGround.unity
+    guid: 0f827b4a0a07101478a1050441797955
   m_configObjects: {}

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EngineSound : MonoBehaviour
 {
     public GameObject audioObj;
-    public AudioSource audioSrs;
+    private AudioSource audioSrs;
     public float minPitch=0.8f;
     public float idlePitch=1f;
     public float currentPitch;
