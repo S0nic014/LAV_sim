@@ -22,21 +22,16 @@ public class LavFire : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {   
-            PlaySound();
-            PlayAnim();
+            Shoot();
         }
     }
 
-    public void PlaySound(){
+    public void Shoot(){
         if(!fireSourse.isPlaying)
             {
                 fireSourse.Play();
+                 anim.Play("FireAnim");
             }   
     }
-
-    public void PlayAnim(){
-        //TODO: add condition: play only if not being played already
-        anim.Play("FireAnim");
-    }
-   
+     
 }
