@@ -6,6 +6,8 @@ public class TurretRotation : MonoBehaviour
 {
     //Turret object transfrom
     public Transform turret;
+
+    public Transform turretUI;
     //Target object tranform to rotate to
     public Transform target;
     //Rotation speed of turret
@@ -16,11 +18,6 @@ public class TurretRotation : MonoBehaviour
     public float rightTraverse=180f;
     //aimVector
     private Vector3 aimPoint;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {
@@ -43,6 +40,10 @@ public class TurretRotation : MonoBehaviour
         Quaternion newRotation=Quaternion.RotateTowards(turret.localRotation, rotationGlobal, traverseSpeed*Time.deltaTime);
 
         turret.localRotation=newRotation;
+
+        //Matches turret rotation in y to UI element Z rotation
+        turretUI.eulerAngles = new Vector3(0.0f, 0.0f, -turret.eulerAngles.y);
+
     }
 
 }

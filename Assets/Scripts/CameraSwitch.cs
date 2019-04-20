@@ -6,11 +6,16 @@ public class CameraSwitch : MonoBehaviour
 {
     public Camera firstPersonCam;
     public Camera thirdPersonCam;
+    public GameObject scopeOverlay;
+    public GameObject aimReticle;
+    public GameObject cameraAim;
     bool thirdSelected=true;
 
+
     void Start()
-    {
+    {   
         firstPersonCam.enabled=false;
+        scopeOverlay.SetActive(firstPersonCam.enabled);
         thirdPersonCam.enabled=true;
     }
 
@@ -26,6 +31,9 @@ public class CameraSwitch : MonoBehaviour
         {
             thirdSelected=!thirdSelected;
             firstPersonCam.enabled=!thirdSelected;
+            scopeOverlay.SetActive(!thirdSelected);
+            aimReticle.SetActive(thirdSelected);
+            cameraAim.SetActive(thirdSelected);
             thirdPersonCam.enabled=thirdSelected;
         }
     }
