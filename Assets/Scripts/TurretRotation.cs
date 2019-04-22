@@ -42,7 +42,7 @@ public class TurretRotation : MonoBehaviour
         turret.localRotation=newRotation;
 
         //Matches turret rotation in y to UI element Z rotation
-        turretUI.eulerAngles = new Vector3(0.0f, 0.0f, -turret.eulerAngles.y);
+        turretUI.eulerAngles = new Vector3(0.0f, 0.0f, -newRotation.eulerAngles.y);
 
     }
 
