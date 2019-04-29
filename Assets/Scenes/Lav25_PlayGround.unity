@@ -407,6 +407,36 @@ Transform:
   m_Father: {fileID: 2284288405057402790}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &139664177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 139664178}
+  m_Layer: 0
+  m_Name: ShellSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &139664178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139664177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.093, y: 0.066, z: 0.4012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2284288405135085724}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -8637,7 +8667,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1409622591}
   - component: {fileID: 1409622593}
-  - component: {fileID: 1409622592}
   m_Layer: 0
   m_Name: GunnerCamera
   m_TagString: 1P Camera
@@ -8659,23 +8688,6 @@ Transform:
   m_Father: {fileID: 2284288405135085724}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0.335, y: 1.17, z: 0}
---- !u!114 &1409622592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409622590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 3850d1afe4ed8a0449c4552cee7ac8cb, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!20 &1409622593
 Camera:
   m_ObjectHideFlags: 0
@@ -15693,6 +15705,7 @@ Transform:
   - {fileID: 2284288404932939270}
   - {fileID: 2284288406242306068}
   - {fileID: 2284288406417324565}
+  - {fileID: 139664178}
   m_Father: {fileID: 2284288406109659720}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16690,7 +16703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2284288406090377179}
-  com: {x: 0, y: 0, z: 0}
+  com: {x: 0, y: 0.15, z: 0}
 --- !u!114 &2284288406090377182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16730,6 +16743,9 @@ MonoBehaviour:
   gunnerCam: {fileID: 1409622593}
   muzzleSmoke: {fileID: 658453408}
   impactEffect: {fileID: 100006, guid: 0438351a6e6422d43a09930e9be00ee9, type: 3}
+  shellPrefab: {fileID: 19934230243021080, guid: 0c2304da0b74fcf459a1ea800a756c09,
+    type: 3}
+  shellSpawner: {fileID: 139664178}
 --- !u!114 &2284288406090377184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19290,6 +19306,7 @@ GameObject:
   - component: {fileID: 2284288406491140236}
   - component: {fileID: 2284288406488273062}
   - component: {fileID: 2284288406489371238}
+  - component: {fileID: 2284288406491303085}
   m_Layer: 0
   m_Name: C_turret_GEO
   m_TagString: Untagged
@@ -19297,6 +19314,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &2284288406491303085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2284288406491303084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.54159415, y: 0.18074131, z: 0.85051054}
+  m_Center: {x: 0.0017572045, y: -0.09440386, z: -0.059612423}
 --- !u!1 &2284288406491303088
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,8 @@ public class LavFire : MonoBehaviour
     public Camera gunnerCam;
     public ParticleSystem muzzleSmoke;
     public GameObject impactEffect;
+    public GameObject shellPrefab;
+    public Transform shellSpawner;
 
     void Start() {
         fireSourse.clip=fireSound;
@@ -38,6 +40,7 @@ public class LavFire : MonoBehaviour
                 fireSourse.Play();
                  anim.Play("FireAnim");
                  CastRay();
+                 SpawnShell();
             }   
     }
      
@@ -64,5 +67,10 @@ public class LavFire : MonoBehaviour
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impactGO, 2f);
         }
+    }
+
+    private void SpawnShell()
+    {
+        GameObject shellInstance=Instantiate(shellPrefab, shellSpawner.position, shellSpawner.rotation);
     }
 }
