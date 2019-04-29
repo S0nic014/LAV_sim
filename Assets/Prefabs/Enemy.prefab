@@ -4614,6 +4614,7 @@ MonoBehaviour:
   destroyedModel: {fileID: 3746172403037179841, guid: 737e5d27027ed4039afa038033346534,
     type: 3}
   explosionPrefab: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
+  explosionSourse: {fileID: 0}
 --- !u!1 &8753286858807379323
 GameObject:
   m_ObjectHideFlags: 0
