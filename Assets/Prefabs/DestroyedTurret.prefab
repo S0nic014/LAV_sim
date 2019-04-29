@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7396524783315314647}
   - component: {fileID: 7396524783315314645}
   - component: {fileID: 7396524783315314644}
+  - component: {fileID: 1415607175274400937}
   m_Layer: 0
   m_Name: C_turret_GEO
   m_TagString: Untagged
@@ -77,6 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1415607175274400937
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7396524783315314646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300066, guid: efe5b8a22f370f04c8f3ef74e3d0f445, type: 3}
 --- !u!1 &7396524783439711380
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +230,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7396524784132057857}
   - component: {fileID: 3181795365668011816}
-  - component: {fileID: 1162380700200870407}
   m_Layer: 0
   m_Name: DestroyedTurret
   m_TagString: Untagged
@@ -256,19 +270,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1162380700200870407
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7396524784132057856}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.60125977, y: 0.20477009, z: 1}
-  m_Center: {x: 0.0040246546, y: 0.13617301, z: 0}
 --- !u!1 &7396524784176070852
 GameObject:
   m_ObjectHideFlags: 0
