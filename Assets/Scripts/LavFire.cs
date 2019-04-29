@@ -8,7 +8,7 @@ public class LavFire : MonoBehaviour
     public AudioSource fireSourse;
     public GameObject barrel;
     private Animator anim;
-    public float damage=10f;
+    public float damage=20f;
     public float range=100f;
     public float impactForce=30f;
     public Camera gunnerCam;
