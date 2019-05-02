@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18354812, g: 0.2276605, b: 0.2972985, a: 1}
+  m_IndirectSpecularColor: {r: 0.18354757, g: 0.22765976, b: 0.29729715, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -859,7 +859,7 @@ PrefabInstance:
     - target: {fileID: 4251000435973038995, guid: bf36a031ee19065448503e6f3a0795a3,
         type: 3}
       propertyPath: maxTorque
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4251000435973038995, guid: bf36a031ee19065448503e6f3a0795a3,
         type: 3}
@@ -8654,6 +8654,11 @@ PrefabInstance:
       propertyPath: enemyPath
       value: 
       objectReference: {fileID: 1870001346}
+    - target: {fileID: 4251000435973038995, guid: bf36a031ee19065448503e6f3a0795a3,
+        type: 3}
+      propertyPath: maxTorque
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf36a031ee19065448503e6f3a0795a3, type: 3}
 --- !u!1 &1320815816

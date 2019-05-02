@@ -55,7 +55,9 @@ public class EnemyMovement : MonoBehaviour
             {
                 wheel.motorTorque=0;
             }
+            Braking();
         }
+
 
     }
 

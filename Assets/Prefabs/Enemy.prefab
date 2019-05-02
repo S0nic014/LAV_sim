@@ -4502,9 +4502,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPath: {fileID: 0}
   maxSteerAngle: 30
-  maxTorque: 200
+  maxTorque: 300
+  maxBrakingTorque: 350
   maxSpeed: 20
   currentSpeed: 0
+  isBraking: 0
+  Debugging: 0
   steerWheels:
   - {fileID: 8753286857724738099}
   - {fileID: 8753286857129840493}
