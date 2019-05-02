@@ -4356,16 +4356,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8753286858787489359}
   - component: {fileID: 8753286858787489352}
-  - component: {fileID: 8753286858787489353}
   - component: {fileID: 8753286858787489354}
   - component: {fileID: 8753286858787489355}
-  - component: {fileID: 8753286858787489396}
-  - component: {fileID: 8753286858787489397}
-  - component: {fileID: 8753286858787489398}
-  - component: {fileID: 8753286858787489399}
-  - component: {fileID: 8753286858787489392}
   - component: {fileID: 8753286858787489393}
   - component: {fileID: 8753286858787489358}
+  - component: {fileID: 4251000435973038995}
+  - component: {fileID: 7584778975250291230}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -4406,37 +4402,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8753286858787489353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8753286858787489394}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f51c425c4ef1a143bfdfcf7fe67db17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  axleInfos:
-  - leftWheel: {fileID: 8753286857724738099}
-    rightWheel: {fileID: 8753286857736242853}
-    motor: 0
-    steering: 1
-  - leftWheel: {fileID: 8753286857129840493}
-    rightWheel: {fileID: 8753286857699656898}
-    motor: 0
-    steering: 1
-  - leftWheel: {fileID: 8753286858908210411}
-    rightWheel: {fileID: 8753286858148025143}
-    motor: 1
-    steering: 0
-  - leftWheel: {fileID: 8753286858634813581}
-    rightWheel: {fileID: 8753286858522644870}
-    motor: 1
-    steering: 0
-  maxMotorTorque: 430
-  maxSteeringAngle: 30
 --- !u!114 &8753286858787489354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4469,97 +4434,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 8753286858787489352}
   com: {x: 0, y: 0.15, z: 0}
---- !u!114 &8753286858787489396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8753286858787489394}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c140eba81a78a4169948b2c92a4e14e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireSound: {fileID: 8300000, guid: b25444ad205e66e4f99bcaa18d5a01d6, type: 3}
-  fireSourse: {fileID: 0}
-  barrel: {fileID: 8753286858118853128}
-  damage: 10
-  range: 100
-  impactForce: 60
-  gunnerCam: {fileID: 0}
-  muzzleSmoke: {fileID: 0}
-  impactEffect: {fileID: 100006, guid: 0438351a6e6422d43a09930e9be00ee9, type: 3}
-  shellPrefab: {fileID: 19934230243021080, guid: 0c2304da0b74fcf459a1ea800a756c09,
-    type: 3}
-  shellSpawner: {fileID: 0}
---- !u!114 &8753286858787489397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8753286858787489394}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0834e0e055654163bac65682ee42f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstPersonCam: {fileID: 0}
-  thirdPersonCam: {fileID: 0}
-  scopeOverlay: {fileID: 0}
-  aimReticle: {fileID: 0}
-  cameraAim: {fileID: 0}
---- !u!114 &8753286858787489398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8753286858787489394}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03bf29167555c4894837136cfcf0f626, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontLightobjs:
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &8753286858787489399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8753286858787489394}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6db817cc3e0204937b86ddf97b811603, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialFOV: 0
-  zoomedFOV: 25
-  currentFOV: 0
-  cam: {fileID: 0}
-  zoomDelta: 2.5
---- !u!114 &8753286858787489392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8753286858787489394}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c755a1cca394149e4b3a05cfd51b0289, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioObj: {fileID: 0}
-  minPitch: 0.8
-  idlePitch: 1
-  currentPitch: 0
-  maxPitch: 1.3
-  deltaPitch: 0.05
 --- !u!114 &8753286858787489393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4614,7 +4488,63 @@ MonoBehaviour:
   destroyedModel: {fileID: 3746172403037179841, guid: 737e5d27027ed4039afa038033346534,
     type: 3}
   explosionPrefab: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
-  explosionSourse: {fileID: 0}
+--- !u!114 &4251000435973038995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8753286858787489394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7fc36435f146d4782c2010b80e4006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPath: {fileID: 0}
+  maxSteerAngle: 30
+  maxTorque: 200
+  maxSpeed: 20
+  currentSpeed: 0
+  steerWheels:
+  - {fileID: 8753286857724738099}
+  - {fileID: 8753286857129840493}
+  - {fileID: 8753286857736242853}
+  - {fileID: 8753286857699656898}
+  torqueWheels:
+  - {fileID: 8753286858908210411}
+  - {fileID: 8753286858634813581}
+  - {fileID: 8753286858148025143}
+  - {fileID: 8753286858522644870}
+--- !u!114 &7584778975250291230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8753286858787489394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687ff723d54e6a64c9691de6de7552b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetWheels:
+  - {fileID: 8753286857724738099}
+  - {fileID: 8753286857129840493}
+  - {fileID: 8753286858908210411}
+  - {fileID: 8753286858634813581}
+  - {fileID: 8753286857736242853}
+  - {fileID: 8753286857699656898}
+  - {fileID: 8753286858148025143}
+  - {fileID: 8753286858522644870}
+  wheelMeshes:
+  - {fileID: 8753286858552574874}
+  - {fileID: 8753286857385311007}
+  - {fileID: 8753286857309406311}
+  - {fileID: 8753286858042274839}
+  - {fileID: 8753286858050342792}
+  - {fileID: 8753286857070163246}
+  - {fileID: 8753286858573115980}
+  - {fileID: 8753286859112794562}
 --- !u!1 &8753286858807379323
 GameObject:
   m_ObjectHideFlags: 0

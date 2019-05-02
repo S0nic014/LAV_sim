@@ -27,7 +27,7 @@ public class CameraSwitch : MonoBehaviour
 
     private void SwitchView()
     {
-        if(Input.GetKeyDown(KeyCode.V))
+        if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             thirdSelected=!thirdSelected;
             firstPersonCam.enabled=!thirdSelected;
