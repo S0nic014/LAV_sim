@@ -1,15 +1,24 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class TargetBehaviour : MonoBehaviour
 {
     public float health=100f;
+    private float maxHealth;
     public GameObject turret;
     public GameObject destroyedModel;
     public GameObject explosionPrefab;
+    public Image hpBar;
+
+    private void Start() {
+        maxHealth=health;
+    }
 
     public void TakeDamage(float amount)
     {
         health-=amount;
+        hpBar.fillAmount=health/maxHealth;
+
         if (health<=0f)
         {
             Die();
