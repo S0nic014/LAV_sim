@@ -9,7 +9,6 @@ public class HpBar : MonoBehaviour
     private void Start() {
         Text enemyName=nameObject.GetComponent<Text>();
         enemyName.text=transform.parent.name;
-        Debug.Log(enemyName);
     }
     void Update()
     {
