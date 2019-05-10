@@ -16,6 +16,7 @@ public class LavFire : MonoBehaviour
     public GameObject impactEffect;
     public GameObject shellPrefab;
     public Transform shellSpawner;
+    public bool Debugging=false;
 
     void Start() {
         fireSourse.clip=fireSound;
@@ -50,8 +51,9 @@ public class LavFire : MonoBehaviour
         RaycastHit hit;
 
         if (Physics.Raycast(gunnerCam.transform.position, gunnerCam.transform.forward, out hit, range))
-        {
-            Debug.Log(hit.transform.name);
+        {   
+            if (Debugging)
+                Debug.Log(hit.transform.name);
 
             TargetBehaviour target = hit.transform.GetComponent<TargetBehaviour>();
             if (target!=null)
