@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 7818968032229300510}
   - component: {fileID: 7818968032229300505}
   m_Layer: 0
-  m_Name: LAV_25
+  m_Name: LAV_25_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,6 +627,7 @@ MonoBehaviour:
   shellPrefab: {fileID: 19934230243021080, guid: 0c2304da0b74fcf459a1ea800a756c09,
     type: 3}
   shellSpawner: {fileID: 8300663855834850767}
+  Debugging: 0
 --- !u!114 &7818968032229300509
 MonoBehaviour:
   m_ObjectHideFlags: 0
